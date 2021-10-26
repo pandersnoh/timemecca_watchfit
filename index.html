@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="kr">
+<meta charset="UTF-8" />    
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="website" />
+<meta property="og:title" content="타임메카" />
+<meta property="og:description" content="나에게 맞는 시계 찾기 콘텐츠 - 타임메카" />
+<meta property="og:site_name" content="타임메카" />
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="stylesheet" href="css/reset.css" />
+<link rel="stylesheet" media="screen and (min-width: 1100px)"  href="css/main.css" />
+<link rel="stylesheet" media="screen and (max-width: 1099px)" href="css/main_m.css" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>        
+<script defer src="js/jquery.selectbox-0.2.min.js"></script> 
+<script defer src="js/watchfit.js"></script>
+<title>나에게 맞는 시계 찾기 - 타임메카 콘텐츠</title>
+    <body>        
+      <div class="watchfit__container">
+            <div class="watchfit__wrapper">
+	            <h5 class="watchfit__title zindex2">나에게 맞는 시계 찾기</h5>    
+                <div class="watchfit__items">
+                    <div class="watchfit__hand" id="watchfit__hand">
+                        <div id="watchfit__watch">
+                            <div id="watchfit__watch__function" class="watchfit__watch__function"></div>
+                            <div id="watchfit__watch__bezel" class="watchfit__watch__bezel"></div>
+                        </div>
+                    </div>
+                    <div class="watchfit__num">
+                        <ul class="clearfix">
+                            <li><dl><dt>시계 지름</dt><dd><span class="meter_num" id="watch_meter">36</span>mm</dd></dl></li>
+                            <li><dl><dt>손목 사이즈</dt><dd><span class="meter_num" id="hand_meter">50</span>mm</dd></dl></li>                        
+                        </ul>
+                    </div>
+                </div>
+                <div class="watchfit__select">
+                    <ul class="clearfix">
+                        <li>
+                            <dl>
+                                <dt>성별/스타일</dt>
+                                <dd>
+                                    <select id="myGender" class="watch_fit_selector" onchange="watchfit_opt()">
+                                        <option value="man1" class="opt_man" selected>남자/맨살</option>
+                                        <option value="woman1" class="opt_woman">여자/맨살</option>
+                                        <option value="man2" class="opt_man">남자/정장</option>
+                                        <option value="woman2" class="opt_woman">여자/정장</option>
+                                        <option value="man3" class="opt_man">남자/캐주얼</option>
+                                        <option value="woman3" class="opt_woman">여자/캐주얼</option>
+                                        <option value="man4" class="opt_man">남자/스포츠</option>
+                                        <option value="woman4" class="opt_woman">여자/스포츠</option>                                        
+                                    </select>
+                                    <span class="watch_fit_selector_arrow"></span>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>손목단면</dt>
+                                <dd>
+                                    <select id="myHandmeter" class="watch_fit_selector" class="myHandmeter" onchange="watchfit_opt()">
+                                        <option value="35" class="girl">35mm</option>                                        
+                                        <option value="40" class="girl">40mm</option>
+                                        <option value="45" class="mid">45mm</option>
+                                        <option value="50" class="mid" selected>50mm</option>
+                                        <option value="55" class="mid">55mm</option>
+                                        <option value="60" class="boy">60mm</option>
+                                        <option value="65" class="boy">65mm</option>                                        
+                                    </select>
+                                    <span class="watch_fit_selector_arrow"></span>                                    
+                                </dd>
+                            </dl>                    
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>시계지름</dt>
+                                <dd>
+                                    <select id="myWatchmeter" class="watch_fit_selector" class="myWatchmeter" onchange="watchfit_opt()">
+                                        <option value="20" class="girl girl_w">20mm</option>
+                                        <option value="23" class="girl">23mm</option>
+                                        <option value="25" class="girl">25mm</option>
+                                        <option value="28" class="girl">28mm</option>
+                                        <option value="30" class="girl">30mm</option>
+                                        <option value="32" class="girl">32mm</option>
+                                        <option value="35" class="mid boy_w">35mm</option>
+                                        <option value="36" class="mid" selected>36mm</option>
+                                        <option value="38" class="mid">38mm</option>
+                                        <option value="40" class="boy">40mm</option>
+                                        <option value="42" class="boy">42mm</option>
+                                        <option value="45" class="boy">45mm</option>
+                                        <option value="48" class="boy">48mm</option>
+                                        <option value="50" class="boy">50mm</option>
+                                        <option value="52" class="boy">52mm</option>
+                                    </select>
+                                    <span class="watch_fit_selector_arrow"></span>                                    
+                                </dd>
+                            </dl>                    
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>밴드</dt>
+                                <dd>
+                                    <select id="myWatchband" class="watch_fit_selector" class="myWatchband" onchange="watchfit_opt()">
+                                        <option value="" class="">---</option>                                        
+                                        <option value="band1" class="metal">메탈</option>
+                                        <option value="band2" class="mesh">메쉬</option>
+                                        <option value="band3" class="leather">가죽</option>
+                                        <option value="band4" class="urethane">우레탄</option>
+                                        <option value="band5" class="nato">나토밴드</option>
+                                    </select>
+                                    <span class="watch_fit_selector_arrow"></span>                                    
+                                </dd>
+                            </dl>                    
+                        </li> 
+                        <li>
+                            <dl>
+                                <dt>기능</dt>
+                                <dd>
+                                    <select id ="myWatchfunc" class="watch_fit_selector disabledOpt" class="myWatchfunc" onchange="watchfit_opt()">
+                                        <option value="">---</option>
+                                        <option value="type1">시/분/침</option>
+                                        <option value="type2">날짜(6방향)</option>
+                                        <option value="type3">날짜(3방향)</option>
+                                        <option value="type4">문페이즈(심플)</option>                                        
+                                        <option value="type5">문페이즈(기능)</option>                                        
+                                        <option value="type6">크로노그래프(6,9,12방향)</option>                                        
+                                        <option value="type7">크로노그래프(3,6,9방향)</option>                                        
+                                        <option value="type8">멀티펑션</option>
+                                        <option value="type9">스켈레톤</option>
+                                    </select>
+                                    <span class="watch_fit_selector_arrow"></span>                                    
+                                </dd>
+                            </dl>                    
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>베젤</dt>
+                                <dd>
+                                    <select id="myWatchbezel" class="watch_fit_selector" class="myWatchbezel" onchange="watchfit_opt()">
+                                        <option value="" class="">---</option>
+                                        <option value="bezel1">얇은 베젤 (남)</option>                   
+                                        <option value="bezel2">얇은 베젤 (여)</option>
+                                        <option value="bezel3">두꺼운 베젤</option>
+                                        <option value="bezel4">우레탄 베젤</option>
+                                    </select>
+                                    <span class="watch_fit_selector_arrow"></span>                                    
+                                </dd>
+                            </dl>                    
+                        </li>                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+</body>
+</html>

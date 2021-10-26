@@ -1,0 +1,161 @@
+* { margin:0; padding:0; }
+li { list-style-type:none; }
+.watchfit__container { margin: 12px;position:relative;height: 100%;border:1px solid #ccc;box-sizing: border-box;/* overflow:hidden; */}
+.watchfit__wrapper { box-sizing: border-box; }
+.watchfit__title {font-family:'Notokr-regular',sans-serif;font-size: 1.165rem;font-weight:normal;text-align:center;position:relative;z-index:2;padding-top: 23px;}
+.watchfit__items {/* display:table-row; */height: 260px;}
+.watchfit__hand {position: relative;width: 100%;height: 261px;margin-top: 10%;box-sizing: border-box;/* top: 15%; *//* left:-35px; */background-image: url('../images/hand_50_man1.jpg');background-size: 760px;background-repeat:no-repeat;background-position: -122px -54px;z-index:1;/* transform:rotate(-15deg); */}
+.watchfit__hand.man {background-size: 1024px;background-repeat:no-repeat;background-position: 33% -106px;z-index:1;}
+.watchfit__num {position:absolute;width: 100%; top: 10%; margin-top: 12px;text-align: center;/* transform: translateX(-17%); *//* left: 50%; *//* right: 0; */z-index:2;}
+.watchfit__num > ul { display:inline-block; }
+.watchfit__num > ul > li {float:left;margin-right:20px;text-align: left;}
+.watchfit__num > ul > li:last-child { margin-right:0px; }
+.watchfit__num > ul > li > dl { font-family:'Notokr-regular',sans-serif;  }
+.watchfit__num > ul > li > dl > dt {font-size: 0.765rem;color:#7e7e7e;letter-spacing:-0.03em;line-height:150%;margin-bottom: 4px;}
+.watchfit__num > ul > li > dl > dd {font-size: 0.695rem;color:#222;line-height:150%;}
+.watchfit__num > ul > li > dl > dd .meter_num {font-size: 1.565rem;color:#ff2025;font-family:'Open Sans',sans-serif;}
+
+#watchfit__watch {position:absolute;width: 177px;height:25.555%;top:26%;left: 21%;/* transform: rotate(4deg); */background:url('../images/watch_dummy.png') no-repeat;}
+
+#watchfit__watch__function {position:absolute;width: 100%;height: 100%;top: 0%;left: 0%;/* transform: rotate(4deg); */}
+#watchfit__watch__function.type1 { background:url('../images/function_type1.png?v=5') no-repeat; background-size:contain; background-position:center center;}
+#watchfit__watch__function.type2 { background:url('../images/function_type2.png?v=5') no-repeat; background-size:contain; background-position:center center;}
+#watchfit__watch__function.type3 { background:url('../images/function_type3.png?v=5') no-repeat; background-size:contain; background-position:center center;}
+#watchfit__watch__function.type4 { background:url('../images/function_type4.png?v=6') no-repeat; background-size:contain; background-position:center center;}
+#watchfit__watch__function.type5 { background:url('../images/function_type5.png?v=6') no-repeat; background-size:contain; background-position:center center;}
+#watchfit__watch__function.type6 { background:url('../images/function_type6.png?v=6') no-repeat; background-size:contain; background-position:center center;}
+#watchfit__watch__function.type7 { background:url('../images/function_type7.png?v=6') no-repeat; background-size:contain; background-position:center center;}
+#watchfit__watch__function.type8 { background:url('../images/function_type8.png?v=50') no-repeat; background-size:contain; background-position:center center;}
+#watchfit__watch__function.type9 { background:url('../images/function_type9.png?v=60') no-repeat; background-size:contain; background-position:center center;}
+
+#watchfit__watch__bezel {position:absolute;width: 100%;height: 100%;top: 1.4445%;left:0.333%;/* transform: rotate(4deg); */background:url('../images/bezel_default.png?v=2') no-repeat;background-size:contain;background-position:center center;}
+#watchfit__watch__bezel.bezel1 { background:url('../images/bezel_type1.png?v=2') no-repeat; background-size:contain; background-position:center center;}
+#watchfit__watch__bezel.bezel2 { background:url('../images/bezel_type2.png?v=2') no-repeat; background-size:contain; background-position:center center;}
+#watchfit__watch__bezel.bezel3 { background:url('../images/bezel_type3.png?v=2') no-repeat; background-size:contain; background-position:center center;}
+#watchfit__watch__bezel.bezel4 { background:url('../images/bezel_type4.png?v=2') no-repeat; background-size:contain; background-position:center center;}
+
+#watchfit__watch.metal { top:26%; left:21%; background:url('../images/watch_metal.png?v=2020') no-repeat; }
+#watchfit__watch.mesh { top:26%; left:21%; background:url('../images/watch_mesh.png?v=20202') no-repeat; }
+#watchfit__watch.leather { top:26%; left:21%; background:url('../images/watch_leather.png?v=20202') no-repeat; }
+#watchfit__watch.urethane { top:26%; left:21%; background:url('../images/watch_urethane.png?v=20201') no-repeat; }
+#watchfit__watch.nato { top:26%; left:21%; background:url('../images/watch_nato.png?v=20201') no-repeat; }
+
+.man_45 #watchfit__watch {height: 58.5555%;top: 70px;left: 25%;}
+.man_50 #watchfit__watch {height: 60.5555%;top: 68px;left: 26%;}
+.man_55 #watchfit__watch {height: 62.5555%;top: 65px;left: 27%;}
+.man_60 #watchfit__watch {height: 65.5555%;top: 57px;left: 28%;}
+.man_65 #watchfit__watch {height: 67.5555%;top: 52px;left: 29%;}
+.woman_35 #watchfit__watch { height:43.5555%; top:100px; left: 60px;}
+.woman_40 #watchfit__watch { height:42.5555%; top:99px; left: 64px;}
+.woman_45 #watchfit__watch { height:46.5555%; top:98px; left: 68px;}
+.woman_50 #watchfit__watch {height: 46.5555%; top:96px; left: 82px;}
+.woman_55 #watchfit__watch {height: 48.5555%; top:98px; left: 89px;}
+
+#watchfit__watch.w_20mm, #watchfit__watch.w_20mm #watchfit__watch__function, #watchfit__watch.w_20mm #watchfit__watch__bezel { background-position:0px 51%; background-size:73%; }
+#watchfit__watch.w_23mm, #watchfit__watch.w_23mm #watchfit__watch__function, #watchfit__watch.w_23mm #watchfit__watch__bezel { background-position:0px 51%; background-size:75%; }
+#watchfit__watch.w_25mm, #watchfit__watch.w_25mm #watchfit__watch__function, #watchfit__watch.w_25mm #watchfit__watch__bezel { background-position:0px 51%; background-size:76%; }
+#watchfit__watch.w_28mm, #watchfit__watch.w_28mm #watchfit__watch__function, #watchfit__watch.w_28mm #watchfit__watch__bezel { background-position:0px 51%; background-size:78%; }
+#watchfit__watch.w_30mm, #watchfit__watch.w_30mm #watchfit__watch__function, #watchfit__watch.w_30mm #watchfit__watch__bezel { background-position:0px 51%; background-size:80%; }
+#watchfit__watch.w_32mm, #watchfit__watch.w_32mm #watchfit__watch__function, #watchfit__watch.w_32mm #watchfit__watch__bezel { background-position:0px 51%; background-size:82%; }
+#watchfit__watch.w_35mm, #watchfit__watch.w_35mm #watchfit__watch__function, #watchfit__watch.w_35mm #watchfit__watch__bezel { background-position:0px 51%; background-size:84%; }
+#watchfit__watch.w_36mm, #watchfit__watch.w_36mm #watchfit__watch__function, #watchfit__watch.w_36mm #watchfit__watch__bezel {background-position:0px 51%;background-size: 86%;}
+#watchfit__watch.w_38mm, #watchfit__watch.w_38mm #watchfit__watch__function, #watchfit__watch.w_38mm #watchfit__watch__bezel { background-position:0px 50%; background-size:90%;}
+#watchfit__watch.w_40mm, #watchfit__watch.w_40mm #watchfit__watch__function, #watchfit__watch.w_40mm #watchfit__watch__bezel { background-position:0px 51%; background-size:92%; }
+#watchfit__watch.w_42mm, #watchfit__watch.w_42mm #watchfit__watch__function, #watchfit__watch.w_42mm #watchfit__watch__bezel { background-position:0px 51%; background-size:94%; }
+#watchfit__watch.w_45mm, #watchfit__watch.w_45mm #watchfit__watch__function, #watchfit__watch.w_45mm #watchfit__watch__bezel { background-position:0px 51%; background-size:96%; }
+#watchfit__watch.w_48mm, #watchfit__watch.w_48mm #watchfit__watch__function, #watchfit__watch.w_48mm #watchfit__watch__bezel { background-position:0px 51%; background-size:98%; }
+#watchfit__watch.w_50mm, #watchfit__watch.w_50mm #watchfit__watch__function, #watchfit__watch.w_50mm #watchfit__watch__bezel { background-position:0px 51%; background-size:100%; }
+#watchfit__watch.w_52mm, #watchfit__watch.w_52mm #watchfit__watch__function, #watchfit__watch.w_52mm #watchfit__watch__bezel { background-position:0px 51%; background-size:105%; }
+
+.watchfit__select {/* position: absolute; */bottom: 3%;left: 2%;width: 94%;margin: 10px auto;border: 1px solid #ff2025;box-sizing: border-box;padding: 5px;font-family: 'Notokr-regular',sans-serif;z-index: 2;/* transform: translateX(-50%); */-webkit-box-shadow: 3px 4px 5px 0px rgba(0,0,0,0.31);-moz-box-shadow: 3px 4px 5px 0px rgba(0,0,0,0.31);box-shadow: 3px 4px 5px 0px rgba(0,0,0,0.31);}
+.watchfit__select > ul > li {float:left;width: 48%;margin: 1%;box-sizing: content-box;}
+.watchfit__select > ul > li:last-child { margin-right:0px;}
+.watchfit__select > ul > li > dl > dt { display: none;font-family:'Notokr-medium',sans-serif;font-size:13px;margin-right:4px;}
+.watchfit__select > ul > li > dl > dd {display:inline-block;position:relative;width: 100%;}
+.myHandmeter2 { display:none; }
+.clearfix::after { content:''; display:block; clear:both; }
+.watch_fit_selector {border: 1px solid #ff2025;box-sizing: border-box;overflow: hidden;position: relative;width: 100%;height: 30px;padding: 3px 28px 5px 5px;background: #2d2d2d;cursor:pointer;font-family:'Notokr-regular',sans-serif;color: #fff;appearance: none;-webkit-appearance: none;}
+.watch_fit_selector.disabled { opacity:0.6; }
+.watch_fit_selector_arrow { display: block; background: url('../images/icon_sprite_new.png') no-repeat; background-position: -78px -25px; background-size: 196px; width: 10px; height: 18px; transform: rotate(90deg); position: absolute; right: 9px; top: 5px; }
+select::-ms-expand { display: none; }
+option:disabled { color:#111; background:#000; }
+
+@media screen and (min-width:768px) {
+    .watchfit__container {width: 720px;height: 720px;margin: 20px auto;position:relative;border:1px solid #ccc;overflow:hidden;}
+    .watchfit__wrapper { display:table;}
+    .watchfit__title {font-family:'Notokr-regular',sans-serif;font-size: 1.665rem;font-weight:normal;text-align:center;position:relative;z-index:2;padding-top:35px;}
+    .watchfit__items {display:unset;height: 497px;}
+    .watchfit__hand {/* width:1100px; */height: 390px;margin-top: 0px;/* position:absolute; *//* top:70px; *//* left:-35px; */background-image: url('../images/hand_50_man1.jpg');background-size: 900px;background-repeat:no-repeat;z-index:1;}
+    .watchfit__num {position: unset;/* bottom:120px; *//* right:60px; *//* z-index:2; */}
+    .watchfit__num > ul > li { float:left; margin-right:20px; }
+    .watchfit__num > ul > li > dl { font-family:'Notokr-regular',sans-serif;  }
+    .watchfit__num > ul > li > dl > dt { font-size:15px; color:#7e7e7e; letter-spacing:-0.03em; line-height:150%; margin-bottom:12px; }
+    .watchfit__num > ul > li > dl > dd { font-size:15px; color:#222; line-height:150%;  }
+    .watchfit__num > ul > li > dl > dd .meter_num { font-size:48px; color:#ff2025; font-family:'Open Sans',sans-serif; }
+
+    #watchfit__watch {position:absolute;width: 220px;height:25.555%;top:26%;left: 21%;transform: rotate(0deg);background:url('../images/watch_dummy.png') no-repeat;}
+
+    #watchfit__watch__function {position:absolute;width: 220px;height:100%;top:0.4445%;left:0.333%;transform: rotate(4deg);}
+    #watchfit__watch__function.type1 { background:url('../images/function_type1.png?v=5') no-repeat; background-size:contain; background-position:center center;}
+    #watchfit__watch__function.type2 { background:url('../images/function_type2.png?v=5') no-repeat; background-size:contain; background-position:center center;}
+    #watchfit__watch__function.type3 { background:url('../images/function_type3.png?v=5') no-repeat; background-size:contain; background-position:center center;}
+    #watchfit__watch__function.type4 { background:url('../images/function_type4.png?v=6') no-repeat; background-size:contain; background-position:center center;}
+    #watchfit__watch__function.type5 { background:url('../images/function_type5.png?v=6') no-repeat; background-size:contain; background-position:center center;}
+    #watchfit__watch__function.type6 { background:url('../images/function_type6.png?v=6') no-repeat; background-size:contain; background-position:center center;}
+    #watchfit__watch__function.type7 { background:url('../images/function_type7.png?v=6') no-repeat; background-size:contain; background-position:center center;}
+    #watchfit__watch__function.type8 { background:url('../images/function_type8.png?v=50') no-repeat; background-size:contain; background-position:center center;}
+    #watchfit__watch__function.type9 { background:url('../images/function_type9.png?v=60') no-repeat; background-size:contain; background-position:center center;}
+
+    #watchfit__watch__bezel {position:absolute;width: 220px;height:100%;top:1.4445%;left:0.333%;transform: rotate(4deg);background:url('../images/bezel_default.png?v=2') no-repeat;background-size:contain;background-position:center center;}
+    #watchfit__watch__bezel.bezel1 { background:url('../images/bezel_type1.png?v=2') no-repeat; background-size:contain; background-position:center center;}
+    #watchfit__watch__bezel.bezel2 { background:url('../images/bezel_type2.png?v=2') no-repeat; background-size:contain; background-position:center center;}
+    #watchfit__watch__bezel.bezel3 { background:url('../images/bezel_type3.png?v=2') no-repeat; background-size:contain; background-position:center center;}
+    #watchfit__watch__bezel.bezel4 { background:url('../images/bezel_type4.png?v=2') no-repeat; background-size:contain; background-position:center center;}
+
+    #watchfit__watch.metal { top:26%; left:21%; background:url('../images/watch_metal.png?v=2020') no-repeat; }
+    #watchfit__watch.mesh { top:26%; left:21%; background:url('../images/watch_mesh.png?v=20202') no-repeat; }
+    #watchfit__watch.leather { top:26%; left:21%; background:url('../images/watch_leather.png?v=20202') no-repeat; }
+    #watchfit__watch.urethane { top:26%; left:21%; background:url('../images/watch_urethane.png?v=20201') no-repeat; }
+    #watchfit__watch.nato { top:26%; left:21%; background:url('../images/watch_nato.png?v=20201') no-repeat; }
+
+    .man_45 #watchfit__watch {height: 39.5555%;top: 17.7777%;left: 22%;}
+    .man_50 #watchfit__watch {height: 41.5555%;top: 16.7777%;left: 23%;}
+    .man_55 #watchfit__watch {height: 43.5555%;top: 15.7777%;left: 24%;}
+    .man_60 #watchfit__watch {height: 45.5555%;top: 13.7777%;left: 25%;}
+    .man_65 #watchfit__watch {height: 46.5555%;top: 12.7777%;left: 24%;}
+    .woman_35 #watchfit__watch {height: 32.5555%;top: 32.5555%;left: 14%;}
+    .woman_40 #watchfit__watch {height: 33.5555%;top: 32.5555%;left: 15%;}
+    .woman_45 #watchfit__watch {height: 34.5555%;top: 33.5555%;left: 13%;}
+    .woman_50 #watchfit__watch {height: 35.5555%;top: 32.5555%;left: 15%;}
+    .woman_55 #watchfit__watch {height: 38.5555%;top: 31.5555%;left: 15%;}
+
+    #watchfit__watch.w_20mm, #watchfit__watch.w_20mm #watchfit__watch__function, #watchfit__watch.w_20mm #watchfit__watch__bezel { background-position:0px 51%; background-size:73%; }
+    #watchfit__watch.w_23mm, #watchfit__watch.w_23mm #watchfit__watch__function, #watchfit__watch.w_23mm #watchfit__watch__bezel { background-position:0px 51%; background-size:75%; }
+    #watchfit__watch.w_25mm, #watchfit__watch.w_25mm #watchfit__watch__function, #watchfit__watch.w_25mm #watchfit__watch__bezel { background-position:0px 51%; background-size:76%; }
+    #watchfit__watch.w_28mm, #watchfit__watch.w_28mm #watchfit__watch__function, #watchfit__watch.w_28mm #watchfit__watch__bezel { background-position:0px 51%; background-size:78%; }
+    #watchfit__watch.w_30mm, #watchfit__watch.w_30mm #watchfit__watch__function, #watchfit__watch.w_30mm #watchfit__watch__bezel { background-position:0px 51%; background-size:80%; }
+    #watchfit__watch.w_32mm, #watchfit__watch.w_32mm #watchfit__watch__function, #watchfit__watch.w_32mm #watchfit__watch__bezel { background-position:0px 51%; background-size:82%; }
+    #watchfit__watch.w_35mm, #watchfit__watch.w_35mm #watchfit__watch__function, #watchfit__watch.w_35mm #watchfit__watch__bezel { background-position:0px 51%; background-size:84%; }
+    #watchfit__watch.w_36mm, #watchfit__watch.w_36mm #watchfit__watch__function, #watchfit__watch.w_36mm #watchfit__watch__bezel { background-position:0px 51%; background-size:86%; }
+    #watchfit__watch.w_38mm, #watchfit__watch.w_38mm #watchfit__watch__function, #watchfit__watch.w_38mm #watchfit__watch__bezel { background-position:0px 50%; background-size:90%;}
+    #watchfit__watch.w_40mm, #watchfit__watch.w_40mm #watchfit__watch__function, #watchfit__watch.w_40mm #watchfit__watch__bezel { background-position:0px 51%; background-size:92%; }
+    #watchfit__watch.w_42mm, #watchfit__watch.w_42mm #watchfit__watch__function, #watchfit__watch.w_42mm #watchfit__watch__bezel { background-position:0px 51%; background-size:94%; }
+    #watchfit__watch.w_45mm, #watchfit__watch.w_45mm #watchfit__watch__function, #watchfit__watch.w_45mm #watchfit__watch__bezel { background-position:0px 51%; background-size:96%; }
+    #watchfit__watch.w_48mm, #watchfit__watch.w_48mm #watchfit__watch__function, #watchfit__watch.w_48mm #watchfit__watch__bezel { background-position:0px 51%; background-size:98%; }
+    #watchfit__watch.w_50mm, #watchfit__watch.w_50mm #watchfit__watch__function, #watchfit__watch.w_50mm #watchfit__watch__bezel { background-position:0px 51%; background-size:100%; }
+    #watchfit__watch.w_52mm, #watchfit__watch.w_52mm #watchfit__watch__function, #watchfit__watch.w_52mm #watchfit__watch__bezel { background-position:0px 51%; background-size:105%; }
+
+    .watchfit__select {/* position: absolute; *//* bottom: 30px; *//* left: 50%; *//* width: 94%; *//* border: 1px solid #ff2025; *//* box-sizing: border-box; */padding: 10px 14px;font-family: 'Notokr-regular',sans-serif;z-index: 2;/* transform: translateX(-50%); */-webkit-box-shadow: 3px 4px 5px 0px rgba(0,0,0,0.31);-moz-box-shadow: 3px 4px 5px 0px rgba(0,0,0,0.31);box-shadow: 3px 4px 5px 0px rgba(0,0,0,0.31);}
+    .watchfit__select > ul > li { float:left; }
+    .watchfit__select > ul > li:last-child { margin-right:0px;}
+    .watchfit__select > ul > li > dl > dt {display:inline-block;width: 100px;font-family:'Notokr-medium',sans-serif;font-size:13px;margin-right:4px;}
+    .watchfit__select > ul > li > dl > dd { display:inline-block; width:178px; position:relative;}
+    .myHandmeter2 { display:none; }
+    .clearfix::after { content:''; display:block; clear:both; }
+    .watch_fit_selector { border: 1px solid #ff2025; box-sizing: border-box; overflow: hidden; position: relative; height: 30px; padding: 3px 28px 5px 5px; background: #2d2d2d; cursor:pointer; font-family:'Notokr-regular',sans-serif; color: #fff; appearance: none; -webkit-appearance: none; }
+    .watch_fit_selector.disabled { opacity:0.6; }
+    .watch_fit_selector_arrow { display: block; background: url('../images/icon_sprite_new.png') no-repeat; background-position: -78px -25px; background-size: 196px; width: 10px; height: 18px; transform: rotate(90deg); position: absolute; right: 9px; top: 5px; }
+    select::-ms-expand { display: none; }
+    option:disabled { color:#111; background:#000; }
+    
+}
