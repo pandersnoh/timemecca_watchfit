@@ -347,7 +347,7 @@ li {
 }
 .watchfit__select > ul > li {
     float: left;
-    margin-right: 15px;
+    margin-right: 10px;
 }
 .watchfit__select > ul > li:last-child {
     margin-right: 0px;
