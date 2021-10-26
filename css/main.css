@@ -333,14 +333,15 @@ li {
 .watchfit__select {
     position: absolute;
     bottom: 30px;
-    left: 50%;
-    width: 1050px;
+    left: 0;
+    right: 0;
+    width: fit-content;
+    margin: 0px auto;
     border: 1px solid #ff2025;
     box-sizing: border-box;
     padding: 10px 14px;
     font-family: "Notokr-regular", sans-serif;
     z-index: 2;
-    transform: translateX(-50%);
     -webkit-box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.31);
     -moz-box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.31);
     box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.31);
