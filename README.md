@@ -7,6 +7,7 @@ PC와 모바일로 분리되었던 기존의 서비스와는 달리 반응형 �
 구현결과 : https://pandersnoh.github.io/timemecca_watchfit/
 
 ## 작업개요
+- 제작년도 : 2019년
 - 활용언어 : HTML5, CSS3, JavaScript
 - 제작사항 : HTML5 시멘틱 마크업, CSS, JavaScript와 셀렉트 박스의 내용을 연동한 이미지 파일과의 바인딩 처리
 - 작업기여도 : 디자인 100% / 퍼블리싱 100% / 스크립트 100%
