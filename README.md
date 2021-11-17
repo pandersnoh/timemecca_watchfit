@@ -4,7 +4,7 @@
 자신이 원하는 시계를 구매할 수 있도록 도와주는 콘텐츠입니다.<br/>
 PC와 모바일로 분리되었던 기존의 서비스와는 달리 반응형 웹으로 재구성하였습니다.
 
-구현결과 : https://pandersnoh.github.io/timemecca_watchfit/
+구현결과 : https://relaxed-poitras-6a322a.netlify.app/
 
 ## 작업개요
 - 제작년도 : 2019년
