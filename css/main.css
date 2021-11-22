@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
 * {
     margin: 0;
     padding: 0;
@@ -19,7 +21,7 @@ li {
     display: table;
 }
 .watchfit__title {
-    font-family: "Notokr-regular", sans-serif;
+    font-family: "Noto Sans KR", sans-serif;
     font-size: 40px;
     font-weight: normal;
     text-align: center;
@@ -53,7 +55,7 @@ li {
     margin-right: 20px;
 }
 .watchfit__num > ul > li > dl {
-    font-family: "Notokr-regular", sans-serif;
+    font-family: "Noto Sans KR", sans-serif;
 }
 .watchfit__num > ul > li > dl > dt {
     font-size: 15px;
@@ -340,7 +342,7 @@ li {
     border: 1px solid #ff2025;
     box-sizing: border-box;
     padding: 10px 14px;
-    font-family: "Notokr-regular", sans-serif;
+    font-family: "Noto Sans KR", sans-serif;
     text-align: center;
     z-index: 2;
     -webkit-box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.31);
@@ -384,7 +386,7 @@ li {
     padding: 3px 28px 5px 5px;
     background: #2d2d2d;
     cursor: pointer;
-    font-family: "Notokr-regular", sans-serif;
+    font-family: "Noto Sans KR", sans-serif;
     color: #fff;
     appearance: none;
     -webkit-appearance: none;
